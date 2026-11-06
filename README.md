@@ -31,7 +31,7 @@ Speed at batch 1: ResNet-18 runs at 4.7 ms on a T4 (213 FPS) and 60 ms on CPU. E
 | `notebooks/A2_household_objects_SOTA.ipynb` | A2: text-to-video generation, CLIP gate, cross-validated experiments, stress test, app bundle |
 | `app.py` | Gradio app: upload/camera → prediction → Grad-CAM + nearest neighbours, latency, environment |
 | `requirements.txt` | Packages for the app |
-| `app_bundle/` | Trained model + gallery + watermarked synthetic clips (created by the A2 notebook) |
+| `app_bundle.zip` (in **Releases**) | Trained model + gallery + watermarked synthetic clips, created by the A2 notebook (too large for the repo itself) |
 | `report/` | A2 report (PDF); add the A1 report PDF here too |
 | `HF_SPACE_README.md` | Header for a Hugging Face Space (rename to `README.md` there) |
 
@@ -45,6 +45,7 @@ Locally (CPU is enough, Python ≥ 3.10):
 ```bash
 git clone https://github.com/<user>/<repo>.git && cd <repo>
 pip install -r requirements.txt
+# download app_bundle.zip from the Releases page of this repo and unzip it here -> ./app_bundle/model.pt, meta.json, ...
 python app.py --bundle app_bundle          # then open http://127.0.0.1:7860
 ```
 
