@@ -35,6 +35,8 @@ Speed at batch 1: ResNet-18 runs at 4.7 ms on a T4 (213 FPS) and 60 ms on CPU. E
 | `report/` | A2 report (PDF); add the A1 report PDF here too |
 | `HF_SPACE_README.md` | Header for a Hugging Face Space (rename to `README.md` there) |
 
+**Demo video:** <https://youtu.be/5UrBNNiN8y4>
+
 **Dataset** (real photos, synthetic clips and frames):
 <https://drive.google.com/drive/folders/1N-FRkymzGX3ZxU2KcoHOKBSCnagD7rEJ?usp=sharing>
 
